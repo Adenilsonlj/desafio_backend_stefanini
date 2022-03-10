@@ -37,7 +37,9 @@ A não entrega do obrigatório o candidato será desclassificado e todos os arte
 
 - A arquitetura de exemplo conta com um projeto docker-compose pronto e configurado para executar a aplicação, incluindo o provisionamento de uma instância MS SQL para mesma. Caso tenha dificuldades para executar o projeto com Docker, ignore o mesmo e execute o Projeto web, mudando apenas a connection string e apontando para uma instância válida do banco de dados.
 
+## 6. Questionário
 
+- Após a entrega do desafio, colabore com a sua opinião: https://forms.gle/jU1RCX5UsBGPieaP8
 
 
 
