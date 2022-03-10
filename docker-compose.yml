@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  example.api:
+    image: ${DOCKER_REGISTRY-}exampleapi
+    depends_on:
+    - sqldata
+    build:
+      context: .
+      dockerfile: src/Example.API/Dockerfile
+    environment:
+      DBConnection: "Data Source=sqldata,1433;Initial Catalog=master;Persist Security Info=True;User ID=sa;Password=Stefanini@123"
+
+
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    environment:
+      - SA_PASSWORD=Stefanini@123
+      - ACCEPT_EULA=Y
+    ports:
+      - "5434:1433"
